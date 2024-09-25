@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BOX MODEL</title>   
+   <style>
+        .element {
+            width: 800px;
+            padding: 25px;
+            border: 3px solid black;
+            text-align: center;
+            background-image:linear-gradient(45deg,blue, rgb(255, 139, 72));
+            color: white;
+            border-radius: 10;
+        }
+
+        .element2 {
+            width: 1000px;
+            padding: 20px;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+       .block {
+            display: flex;
+            background-color: rgb(104, 217, 251);
+            margin: 20px 0;
+            padding: 15px;
+        }
+
+        .inline {
+            display: inline-block;
+            background-color: rgb(21, 253, 0);
+            width: 800px;
+            height: 50px;
+            margin: 15px;
+            /* Margen alrededor */
+            padding: 25px;
+        }
+
+        .content-box {
+            width: 750px;
+            padding: 30px;
+            border: 10px solid blue;
+            box-sizing: content-box;
+            background-color: rgb(77, 255, 246);
+            margin: 12px;
+        }
+        
+        .border-box {
+            width: 900px;
+            padding: 20px;
+            border: 5px solid rgb(79, 187, 79);
+            box-sizing: border-box; /* Incluye padding y borde */
+            background-color: lightgreen;
+            margin: 10px;
+        }
+    </style>   
+</head>
+<body>
+    <p class="element">Asfi utilizará inteligencia artificial para brindar atención a los consumidores</p>
+    <img src="https://lavozdetarija.com/wp-content/uploads/2023/07/ASFII.jpg" width="450" height="400">
+    <p class="element2">La Autoridad de Supervisión del Sistema Financiero (Asfi) informó que, mediante la creación de Asfibo’, se utilizará inteligencia artificial para atender a los consumidores financieros, de manera virtual, las 24 horas y los siete días de la semana.
+       La presentación de la iniciativa fue realizada en la Expocruz, en Santa Cruz de la Sierra, donde la directora ejecutiva de la Asfi, Ivette Espinoza, explicó la necesidad de actualizarse a las exigencias de los tiempos modernos.
+       “Vivimos en una era donde la tecnología está transformando cada aspecto de nuestra vida y el sector financiero no es la excepción. En este contexto, la Asfi ha dado un paso decisivo hacia la modernización de sus servicios ofreciendo a los ciudadanos una herramienta que combina eficiencia y oportunidad”, afirmó en el acto de presentación.
+    </p>
+    <div class="block">El Asfibot, también denominado como IAN, brindará atenciones de manera inmediata y la población podrá acceder a este servicio a través de cualquier dispositivo.
+        Permitirá acceder a “información en cuanto a productos, servicios financieros y se pueden formular consultas que serán respondidas de manera inmediata y con calidez”, añadió Espinoza.</div>
+        <br>
+    <div class="inline">El Asfibot, también denominado como IAN, brindará atenciones de manera inmediata y la población podrá acceder a este servicio a través de cualquier dispositivo.
+        Permitirá acceder a “información en cuanto a productos, servicios financieros y se pueden formular consultas que serán respondidas de manera inmediata y con calidez”, añadió Espinoza.</div>
+    <div class="block">De esta manera, la Asfi pretende que algunos trámites se “desburocraticen” y se logre automatizar respuestas a las preguntas más frecuentes, sin necesidad de que las personas se apersonen físicamente.
+
+Espinoza invitó a la población apersonarse al stand de la Asfi en la Expocruz, donde se presentará más innovaciones para modernizar al sector financiero.</div>
+    <div class="content-box">El Asfibot, también denominado como IAN, brindará atenciones de manera inmediata y la población podrá acceder a este servicio a través de cualquier dispositivo.
+        Permitirá acceder a “información en cuanto a productos, servicios financieros y se pueden formular consultas que serán respondidas de manera inmediata y con calidez”, añadió Espinoza.</div>
+    <div class="border-box">Según la directora de la Asfi, esta inteligencia artificial utilizará elementos gráficos y dinámicos para que sea de fácil comprensión para todos los usuarios.
+        Además, brindará videos y “consejos prácticos” para evitar caer en estafas y que los más jóvenes aprendan a ahorrar. El objetivo de IAN es ser de utilidad para la población en general, de todas las edades.</div>
+</body>
+
+</html>
